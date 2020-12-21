@@ -1,18 +1,19 @@
 # Versioning of the ROM
 
 ifndef ROM_BUILDTYPE
-    ROM_BUILDTYPE := HOMEMADE
+    ROM_BUILDTYPE := GAPPS
 endif
 
 TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
-TARGET_PRODUCT_SHORT := $(subst omni_,,$(TARGET_PRODUCT_SHORT))
+TARGET_PRODUCT_SHORT := $(subst OmniHax0r_,,$(TARGET_PRODUCT_SHORT))
 
 # Build the final version string
-ifeq ($(ROM_BUILDTYPE),GAPPS)
-include vendor/gapps/config.mk
-    VENDOR_EXCEPTION_PATHS += \
-    gapps
-endif
+#ifeq ($(ROM_BUILDTYPE),GAPPS)
+#include vendor/gapps/config.mk
+#    VENDOR_EXCEPTION_PATHS += \
+#    gapps
+#endif
+
 ifeq ($(ROM_BUILDTYPE),MICROG)
 include vendor/microg/microg.mk
     VENDOR_EXCEPTION_PATHS += \
@@ -26,5 +27,5 @@ endif
 
 # Apply it to build.prop
 OMNI_PRODUCT_PROPERTIES += \
-    ro.modversion=OmniROM-$(ROM_VERSION) \
+    ro.modversion=OmniHax0r-$(ROM_VERSION) \
     ro.omni.version=$(ROM_VERSION)
