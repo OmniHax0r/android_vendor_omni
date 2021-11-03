@@ -1,7 +1,7 @@
 # Versioning of the ROM
 
 ifndef ROM_BUILDTYPE
-    ROM_BUILDTYPE := HOMEMADE
+    ROM_BUILDTYPE := PUBLIC
 endif
 
 TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
@@ -19,12 +19,12 @@ include vendor/microg/microg.mk
     microg
 endif
 ifeq ($(ROM_BUILDTIME_UTC),y)
-    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
+    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date -u +%Y%m%d%H%M)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
 else
-    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
+    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d%H%M)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
 endif
 
 # Apply it to build.prop
 OMNI_PRODUCT_PROPERTIES += \
-    ro.modversion=OmniROM-$(ROM_VERSION) \
-    ro.omni.version=$(ROM_VERSION)
+    ro.modversion=OmniHax0r-$(ROM_VERSION) \
+    ro.omni.version=OmniHax0r-$(ROM_VERSION)
