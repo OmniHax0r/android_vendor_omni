@@ -27,4 +27,4 @@ endif
 # Apply it to build.prop
 OMNI_PRODUCT_PROPERTIES += \
     ro.modversion=OmniHax0r-$(ROM_VERSION) \
-    ro.omni.version=OmniHax0r-$(ROM_VERSION)
+    ro.omni.version=$(ROM_VERSION)
