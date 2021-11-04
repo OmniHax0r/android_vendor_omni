@@ -8,5 +8,6 @@
     <item type="drawable" name="theme_wallpaper_thumbnail_red">@drawable/red_wallpaper</item>
     <item type="drawable" name="theme_wallpaper_nature">@drawable/nature_wallpaper</item>
     <item type="drawable" name="theme_wallpaper_thumbnail_nature">@drawable/nature_wallpaper</item>
+    <item type="drawable" name="theme_wallpaper_blue">@drawable/blue_wallpaper</item>
+    <item type="drawable" name="theme_wallpaper_thumbnail_blue">@drawable/blue_wallpaper</item>
 </resources>
-

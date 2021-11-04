@@ -77,4 +77,17 @@
     <string name="theme_wallpaper_action_nature">https://www.omnirom.org/</string>
     <!--<string name="theme_header_nature">nature_header</string>-->
 
+    <string name="theme_name_blue">Blue</string>
+    <string name="theme_title_blue">@string/theme_name_blue</string>
+    <string name="theme_overlay_color_blue">com.android.theme.color.space</string>
+    <string name="theme_overlay_primary_blue">com.android.theme.color.primary.darkblue</string>
+    <string name="theme_overlay_icon_android_blue">com.android.theme.icon_pack.circular.android</string>
+    <string name="theme_overlay_icon_launcher_blue">com.android.theme.icon_pack.circular.launcher</string>
+    <string name="theme_overlay_icon_settings_blue">com.android.theme.icon_pack.circular.settings</string>
+    <string name="theme_overlay_icon_sysui_blue">com.android.theme.icon_pack.circular.systemui</string>
+    <string name="theme_overlay_shape_blue">com.android.theme.icon.squircle</string>
+    <string name="theme_wallpaper_title_blue">Omni</string>
+    <string name="theme_wallpaper_attribution_blue">OmniROM</string>
+    <string name="theme_wallpaper_action_blue">https://www.omnirom.org/</string>
+    <!--<string name="theme_header_space">blue_header</string>-->
 </resources>
